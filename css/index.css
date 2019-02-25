@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Play:400,700|Righteous');
+
+:root {
+    font-family: 'Play', sans-serif;
+    --main-font-color: black;
+    --secondary-font-color: white;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+header nav .logo {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+header nav .menu {
+    display: flex;
+}
+
+header nav .menu {
+    padding: 0;
+    justify-content: space-around;
+}
+
+header nav .menu li {
+    list-style-type: none;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    color: var(--main-font-color);
+    text-transform: uppercase;
+}
+
+header nav .menu a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 480px) {
+    header nav {
+        display: flex;
+    }
+    
+    header nav .menu {
+        flex: 1;    
+    }
+}
+
+header .banner {
+    background-image: url(../img/tesla-model-x-black.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .banner h1 {
+    color: var(--secondary-font-color);
+    font-size: 4.5rem;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    border: 1px solid var(--main-font-color);
+    padding: 10px;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+}
+
+.product-card .button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-list {
+        display: grid;
+        grid-gap: 5px;
+}
+
+@media (min-width: 480px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 660px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.btn-default {
+    color: blue;
+}
